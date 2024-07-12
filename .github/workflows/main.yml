@@ -32,8 +32,8 @@ jobs:
           context: .
           push: true
           tags: |
-            docker build -t n1lux/nlw.journey.api:${{ steps.generate_sha.outputs.sha }}
-            docker build -t n1lux/nlw.journey.api:latest
+            n1lux/nlw.journey.api:${{ steps.generate_sha.outputs.sha }}
+            n1lux/nlw.journey.api:latest
 
       
       # - name: Build Docker Image
